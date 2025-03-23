@@ -5,6 +5,6 @@ Find what's the IP address that has the most requests in this file (there's no t
 
 Solution: 
 
-cat /home/admin/access.log | awk '{print $1}' | uniq -c | sort  
+cat /home/admin/access.log | awk '{print $1}' | uniq -c | sort -r | head -n 1  
 
 echo "1.2.3.4" > /home/admin/highestip.txt
