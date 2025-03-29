@@ -6,7 +6,7 @@ Find the average (more precisely; the arithmetic mean: sum of numbers divided by
 Solution: Python Script 
 
 
-with open("scores.txt") as file:
+    with open("scores.txt") as file:
 
     sum=0
     items=0
