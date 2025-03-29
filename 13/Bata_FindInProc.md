@@ -5,6 +5,6 @@ Find the file and save the word after "secret:" to the file /home/admin/secret.t
 
 Solution: 
 
-cd /proc/sys 
-grep -irl "secret:"  --> cat <foundFile> 
-echo "excalibur" > /home/admin/secret.txt
+    cd /proc/sys 
+    grep -irl "secret:"  --> cat <foundFile> 
+    echo "excalibur" > /home/admin/secret.txt
