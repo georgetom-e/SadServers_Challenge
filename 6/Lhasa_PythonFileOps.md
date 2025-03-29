@@ -18,12 +18,12 @@ with open("scores.txt") as file:
 
         items+=1
 
-average=round(total / items, 2)
-
-print(f"Average: {average}")
-
-#Write avergae into file
-
-with open("~/solution", "w") as solution_file:
-    solution_file.write(str(average))
+    average=round(total / items, 2)
+    
+    print(f"Average: {average}")
+    
+    #Write avergae into file
+    
+    with open("~/solution", "w") as solution_file:
+        solution_file.write(str(average))
 
