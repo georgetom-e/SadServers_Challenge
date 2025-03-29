@@ -6,24 +6,30 @@ Find the average (more precisely; the arithmetic mean: sum of numbers divided by
 Solution: Python Script 
 
 
+       
     with open("scores.txt") as file:
 
-    sum=0
-    items=0
+    sum = 0
+    items = 0
 
+    
     for line in file:
-        arr=line.split()
+        arr = line.split()
 
-        sum+=float(arr[1])
+        # Add the value from the second column to the total sum
+        sum += float(arr[1])
 
-        items+=1
+        
+        items += 1
 
-    average=round(total / items, 2)
+    
+    average = round(sum / items, 2)
+    
     
     print(f"Average: {average}")
     
-    #Write avergae into file
-    
-    with open("~/solution", "w") as solution_file:
+    # Write the average into the file
+    with open("solution", "w") as solution_file:
         solution_file.write(str(average))
+
 
