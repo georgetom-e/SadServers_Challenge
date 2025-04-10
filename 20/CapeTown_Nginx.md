@@ -6,12 +6,12 @@ Solution:
 
 1. Check nginx status: sudo systemctl status nginx.service 
 
-Apr 10 06:08:01 ip-172-31-73-152 systemd[1]: Starting The NGINX HTTP and reverse proxy server...
-Apr 10 06:08:02 ip-172-31-73-152 nginx[567]: nginx: [emerg] unexpected ";" in /etc/nginx/sites-enabled/default:1
-Apr 10 06:08:02 ip-172-31-73-152 nginx[567]: nginx: configuration file /etc/nginx/nginx.conf test failed
-Apr 10 06:08:02 ip-172-31-73-152 systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
-Apr 10 06:08:02 ip-172-31-73-152 systemd[1]: nginx.service: Failed with result 'exit-code'.
-Apr 10 06:08:02 ip-172-31-73-152 systemd[1]: Failed to start The NGINX HTTP and reverse proxy server.
+         Apr 10 06:08:01 ip-172-31-73-152 systemd[1]: Starting The NGINX HTTP and reverse proxy server...
+         Apr 10 06:08:02 ip-172-31-73-152 nginx[567]: nginx: [emerg] unexpected ";" in /etc/nginx/sites-enabled/default:1
+         Apr 10 06:08:02 ip-172-31-73-152 nginx[567]: nginx: configuration file /etc/nginx/nginx.conf test failed
+         Apr 10 06:08:02 ip-172-31-73-152 systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+         Apr 10 06:08:02 ip-172-31-73-152 systemd[1]: nginx.service: Failed with result 'exit-code'.
+         Apr 10 06:08:02 ip-172-31-73-152 systemd[1]: Failed to start The NGINX HTTP and reverse proxy server.
 
 2. Remove the ';' in line 1 of the /etc/nginx/sites-enabled/defaultconfig file. 
 
